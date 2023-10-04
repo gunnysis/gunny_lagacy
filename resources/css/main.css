@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .main {
+        height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main__li {
+        list-style: none;
+    }
+
+    .main__ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .pagination {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pagination li {
+        margin-right: 5px;
+    }
+
+
+
+}

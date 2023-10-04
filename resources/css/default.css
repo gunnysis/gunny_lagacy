@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+tbody {
+    vertical-align: top;
+}
+
+

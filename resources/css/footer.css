@@ -1,0 +1,47 @@
+
+@media screen and (max-width: 768px) {
+
+    #footer {
+        height: 15vh;
+        color: #0000008c;
+        border-top: 1px solid #c3c4c7;
+    }
+
+    .footer__container {
+        max-width: 40rem;
+        background-color: #d3d3d3;
+    }
+
+
+    .footer__company__info {
+        display: block;
+    }
+
+    .company__intro {
+        padding: 1.5rem 1rem 0 1rem;
+    }
+
+    .company__intro div {
+        padding-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .company__cs {
+        display: inline-block;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+
+    .company__cs span {
+        padding-right: 0.5rem;
+    }
+
+    .footer__apps {
+        float: right;
+    }
+
+    .div__footer {
+        padding-bottom: 3rem;
+    }
+
+}
