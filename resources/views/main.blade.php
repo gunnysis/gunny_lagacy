@@ -16,7 +16,7 @@
 
         <div class="search">
             <form action="/sendSearch" method="get">
-                <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
+                <select onchange="this.form.submit();" id="select__kind" name="selectedOption" style="margin: 0 auto;">
                     <option value="">선택</option>
                     <option value="인사말">인사말</option>
                     <option value="식사">식사</option>
