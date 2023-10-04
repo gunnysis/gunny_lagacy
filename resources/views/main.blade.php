@@ -14,9 +14,9 @@
     <header class="flex" id="header"></header>
     <main class="flex main">
 
-        <div class="search">
+        <div class="search" style="margin: 0 auto;">
             <form action="/sendSearch" method="get">
-                <select onchange="this.form.submit();" id="select__kind" name="selectedOption" style="margin: 0 auto;">
+                <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
                     <option value="">선택</option>
                     <option value="인사말">인사말</option>
                     <option value="식사">식사</option>
