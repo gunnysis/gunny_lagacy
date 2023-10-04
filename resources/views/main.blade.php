@@ -13,6 +13,12 @@
 <div class="container">
     <header class="flex" id="header"></header>
     <main class="flex main">
+        <select>
+            <option value="1">인사말</option>
+            <option value="2">2번</option>
+            <option value="3" selected>3번</option>
+        </select>
+
         @if (count($memo1) > 0)
             <ul class="flex main__ul">
                 @foreach ($memo1 as $item)
