@@ -1,15 +1,17 @@
 import {createApp} from 'vue';
-
 import './bootstrap';
-
 //add vue
 import Header from './Header.vue';
+import Search from './main.vue';
 import Footer from "./Footer.vue";
 
 
-createApp(Header).mount("#header")
-createApp(Footer).mount("#footer")
 
+
+
+createApp(Header).mount("#header")
+createApp(Search).mount("#search")
+createApp(Footer).mount("#footer")
 
 // 햄버거 아이콘 클릭 시 메뉴를 열고 닫음
 const menuIcon = document.getElementById('menu-icon');
@@ -22,3 +24,5 @@ menuIcon.addEventListener('click', () => {
         menuContent.style.display = 'block';
     }
 });
+
+

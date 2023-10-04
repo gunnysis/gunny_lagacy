@@ -10,7 +10,14 @@ export default defineConfig({
         vue(),
 
         laravel({
-            input: ['resources/css/register.css', 'resources/css/default.css', 'resources/css/main.css', 'resources/css/footer.css', 'resources/css/header.css', 'resources/js/app.js'],
+            input: [
+                'resources/css/register.css',
+                'resources/css/default.css',
+                'resources/css/main.css',
+                'resources/css/footer.css',
+                'resources/css/header.css',
+                'resources/js/app.js',
+            ],
             refresh: true,
         }),
     ],

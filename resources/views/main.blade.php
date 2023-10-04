@@ -12,12 +12,8 @@
 <body>
 <div class="container">
     <header class="flex" id="header"></header>
+    <section class="flex" id="search"></section>
     <main class="flex main">
-        <select style="width: 100px; margin: 0 auto;">
-            <option value="1">인사말</option>
-            <option value="2">2번</option>
-            <option value="3" selected>3번</option>
-        </select>
 
         @if (count($memo1) > 0)
             <ul class="flex main__ul">

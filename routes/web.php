@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [Controller::class, 'index']);
 Route::get('/register', [Controller::class, 'register']);
 Route::post('/storeData', [Controller::class, 'storeData']);
+Route::post('/send-search', [Controller::class, 'searchKind']);
 
 
 

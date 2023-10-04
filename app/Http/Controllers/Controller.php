@@ -29,5 +29,15 @@ class Controller extends BaseController
 
     }
 
+    public function searchKind(Request $request)
+    {
+        // HTTP POST 요청에서 데이터 추출
+        $selectedOption = $request->input('selectedOption');
+        // Memo 모델에서 데이터 조회
+        $memo1 = Memo::where('kind', '=', $selectedOption)->paginate(6);
 
+        // 데이터를 반환
+        return view('main',[
+            'memo1' => $memo1]);
+    }
 }
