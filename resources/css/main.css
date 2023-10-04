@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
-
+    .search {
+        margin: 0 auto;
+    }
 
     .main {
         height: 65vh;

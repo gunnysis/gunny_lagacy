@@ -12,8 +12,17 @@
 <body>
 <div class="container">
     <header class="flex" id="header"></header>
-    <section class="flex" id="search"></section>
     <main class="flex main">
+
+        <div class="search">
+            <form action="/sendSearch" method="get">
+                <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
+                    <option value="">선택</option>
+                    <option value="인사말">인사말</option>
+                    <option value="식사">식사</option>
+                </select>
+            </form>
+        </div>
 
         @if (count($memo1) > 0)
             <ul class="flex main__ul">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Memo;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use function Termwind\render;
 
 class Controller extends BaseController
 {
@@ -36,8 +37,7 @@ class Controller extends BaseController
         // Memo 모델에서 데이터 조회
         $memo1 = Memo::where('kind', '=', $selectedOption)->paginate(6);
 
-        // 데이터를 반환
         return view('main',[
-            'memo1' => $memo1]);
+            'memo1' => $memo1],);
     }
 }
