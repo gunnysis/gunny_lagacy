@@ -11,7 +11,6 @@
 </head>
 <body>
 <div class="container">
-    test
     <header class="flex" id="header"></header>
     <main class="flex main">
         @if (count($memo1) > 0)
