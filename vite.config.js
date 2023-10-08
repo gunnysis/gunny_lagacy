@@ -16,7 +16,9 @@ export default defineConfig({
                 'resources/css/main.css',
                 'resources/css/footer.css',
                 'resources/css/header.css',
+                'resources/css/listen.css',
                 'resources/js/app.js',
+
             ],
             refresh: true,
         }),

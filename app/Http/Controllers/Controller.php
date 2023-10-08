@@ -21,6 +21,11 @@ class Controller extends BaseController
         return view('register');
     }
 
+    public function listen()
+    {
+        return view('listen');
+    }
+
     public function storeData(Request $request)
     {
         $data = $request->only(['kind', 'jap_pron', 'jap_lang', 'jap_mean']);

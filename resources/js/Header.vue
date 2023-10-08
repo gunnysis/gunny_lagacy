@@ -11,6 +11,7 @@
         <div class="menu-content" id="menu-content">
             <ul>
                 <li><a href="/register">register</a></li>
+                <li><a href="/listen">listen</a></li>
             </ul>
         </div>
     </div>
