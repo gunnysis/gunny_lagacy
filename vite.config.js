@@ -18,6 +18,7 @@ export default defineConfig({
                 'resources/css/header.css',
                 'resources/css/listen.css',
                 'resources/css/pagination.css',
+                'resources/css/main.css',
                 'resources/js/app.js',
 
             ],

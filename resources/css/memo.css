@@ -1,21 +1,21 @@
 
 
-.main {
+.memo {
     height: 80vh;
     justify-content: center;
     flex-direction: column;
 }
 
-.main__search {
+.memo__search {
     justify-content: center;
     gap: 1rem;
 }
 
-.main__li {
+.memo__li {
     list-style: none;
 }
 
-.main__ul {
+.memo__ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
 
-    .main__ul {
+    .memo__ul {
         justify-content: center;
     }
 

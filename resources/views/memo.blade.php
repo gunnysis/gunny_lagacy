@@ -13,8 +13,8 @@
 <body>
 <div class="container">
     <header class="header flex" id="header"></header>
-    <main class="flex main">
-        <div class="main__search flex">
+    <main class="memo flex">
+        <div class="memo__search flex">
             <span class="search">
                 <form action="/sendSearch" method="get">
                     <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
@@ -29,9 +29,9 @@
 
 
         @if (count($memo1) > 0)
-            <ul class="flex main__ul">
+            <ul class="flex memo__ul">
                 @foreach ($memo1 as $item)
-                    <li class="main__li">
+                    <li class="memo__li">
                         <strong>No:</strong> {{ $item->id }}<br>
                         <strong>종류:</strong> {{ $item->kind }}<br>
                         <strong>발음:</strong> {{ $item->jap_pron }}<br>
