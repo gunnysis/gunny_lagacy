@@ -13,7 +13,6 @@
 <div class="container">
     <header class="flex" id="header"></header>
     <main class="flex main">
-
         <div class="search" style="margin: 0 auto;">
             <form action="/sendSearch" method="get">
                 <select onchange="this.form.submit();" id="select__kind" name="selectedOption">

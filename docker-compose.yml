@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
 
@@ -28,50 +28,4 @@ services:
         depends_on:
             - php
 
-    ####################################################################################################
-    # DATABASE (MySQL)
-    ####################################################################################################
-    db:
-        container_name: laravel_mysql
-        image: mysql:8.1
-        ports:
-            - 3306:3306
-        volumes:
-            - .docker/db/data:/var/lib/mysql
-            - .docker/logs:/var/log/mysql
-            - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
-            - .docker/db/sql:/docker-entrypoint-initdb.d
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: laravel
-            MYSQL_USER: gunny
-            MYSQL_PASSWORD: 123123
 
-    # ####################################################################################################
-    # # DATABASE (MariaDB)
-    # ####################################################################################################
-    # db:
-    #     container_name: laravel_mariadb
-    #     image: mariadb:10.11
-    #     ports:
-    #         - 3306:3306
-    #     volumes:
-    #         - .docker/db/data:/var/lib/mysql
-    #         - .docker/logs:/var/log/mysql
-    #         - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
-    #         - .docker/db/sql:/docker-entrypoint-initdb.d
-    #     environment:
-    #         MYSQL_ROOT_PASSWORD: root
-    #         MYSQL_DATABASE: laravel_db_name
-    #         MYSQL_USER: laravel_db_user
-    #         MYSQL_PASSWORD: laravel_db_pass
-
-    ####################################################################################################
-    # Mailpit
-    ####################################################################################################
-    mail:
-        container_name: laravel_mailpit
-        image: axllent/mailpit:latest
-        ports:
-        - 8025:8025
-        - 1025:1025
