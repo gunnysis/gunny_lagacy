@@ -1,22 +1,24 @@
-@media (max-width: 768px) {
-    .register {
-        margin-top: 15px;
-        align-items: center;
-        justify-content: start;
-        line-height: 2rem;
-    }
+.register {
+    margin-top: 15px;
+    align-items: center;
+    justify-content: start;
+    line-height: 2rem;
+}
 
-    .register button {
-        border: none;
-        border-radius: 5px;
-        background-color: greenyellow;
-        margin-top: 5px;
-        padding: 7px;
-        font-size: 1.2rem;
-    }
+.register button {
+    border: none;
+    border-radius: 5px;
+    background-color: greenyellow;
+    margin-top: 5px;
+    padding: 7px;
+    font-size: 1.2rem;
+}
 
-    .div__btn {
-        display: flex;
-        justify-content: center;
-    }
+.div__btn {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
 }
