@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Memo;
+use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use function Termwind\render;
@@ -15,6 +16,12 @@ class Controller extends BaseController
         return view('main',[
             'memo1' => $memo1]);
     }
+    public function memo()
+    {
+        $memo1 = Memo::paginate(6);
+        return view('memo',[
+            'memo1' => $memo1]);
+    }
 
     public function register()
     {
@@ -23,7 +30,9 @@ class Controller extends BaseController
 
     public function listen()
     {
-        return view('listen');
+        $videos = Video::paginate(3);
+        return view('listen',[
+            'videos' => $videos]);
     }
 
     public function storeData(Request $request)

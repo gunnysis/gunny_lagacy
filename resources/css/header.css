@@ -34,7 +34,6 @@
 
 .menu-content a {
     color: black;
-    text-decoration-line: none;
 }
 
 header.header {
@@ -56,9 +55,6 @@ header.header {
     justify-content: space-between;
 }
 
-.header-content a {
-    text-decoration-line: none;
-}
 
 .header-content__logo {
     color: orange;
@@ -68,7 +64,13 @@ header.header {
     margin-right: 20px;
 }
 
+@media screen and (min-width: 962px) {
 
+    .main {
+        height: 75vh;
+    }
+
+}
 
 
 

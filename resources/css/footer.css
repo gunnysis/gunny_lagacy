@@ -50,7 +50,7 @@
 
     .footer__container {
         max-width: 100%;
-        height: 100%;
+
     }
 
     .div__company__infos {
@@ -58,5 +58,14 @@
     }
 
 }
+
+@media screen and (min-width: 962px) {
+
+    #footer {
+        height: 30vh;
+    }
+
+}
+
 
 

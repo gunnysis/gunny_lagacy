@@ -11,12 +11,21 @@
 </head>
 <body>
 <div class="container">
-    <header class="flex" id="header"></header>
-    <main class="flex listen">
-        listen
+    <header class="header flex" id="header"></header>
+    <main class="listen flex">
+        <div class="div__listen flex">
+            @foreach ($videos as $video)
+                <div class="media flex">
+                    <h4>{{ $video->title }}</h4>
+                    <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            @endforeach
+            {{ $videos->links() }}
+        </div>
 
     </main>
-    <footer id="footer"></footer>
+    <footer class="footer" id="footer"></footer>
 </div>
 
 @vite('resources/js/app.js')

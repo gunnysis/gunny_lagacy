@@ -10,8 +10,8 @@
         <!-- 메뉴 -->
         <div class="menu-content" id="menu-content">
             <ul>
-                <li><a href="/register">register</a></li>
-                <li><a href="/listen">listen</a></li>
+                <li><a href="/memo">일본어 메모</a></li>
+                <li><a href="/listen">듣기</a></li>
             </ul>
         </div>
     </div>

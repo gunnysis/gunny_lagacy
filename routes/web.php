@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', [Controller::class, 'index']);
+Route::get('/memo', [Controller::class, 'memo']);
 Route::get('/register', [Controller::class, 'register']);
 Route::get('/listen', [Controller::class, 'listen']);
 Route::post('/storeData', [Controller::class, 'storeData']);

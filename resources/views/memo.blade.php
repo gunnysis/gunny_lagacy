@@ -12,16 +12,20 @@
 <body>
 <div class="container">
     <header class="header flex" id="header"></header>
-    <main class="main flex">
-        <div class="search" style="margin: 0 auto;">
-            <form action="/sendSearch" method="get">
+    <main class="flex main">
+        <div class="main__search flex">
+            <span class="search">
+                <form action="/sendSearch" method="get">
                 <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
                     <option value="">선택</option>
                     <option value="인사말">인사말</option>
                     <option value="식사">식사</option>
                 </select>
             </form>
+            </span>
+            <span><a href="/register">메모 등록</a></span>
         </div>
+
 
         @if (count($memo1) > 0)
             <ul class="flex main__ul">
