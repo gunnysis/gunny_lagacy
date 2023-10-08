@@ -8,23 +8,23 @@
     @vite('resources/css/header.css')
     @vite('resources/css/footer.css')
     @vite('resources/css/listen.css')
+    @vite('resources/css/pagination.css')
 </head>
 <body>
 <div class="container">
     <header class="header flex" id="header"></header>
     <main class="listen flex">
-        <div class="div__listen flex">
-            @foreach ($videos as $video)
-                <div class="media flex">
-                    <h4>{{ $video->title }}</h4>
-                    <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-            @endforeach
-            {{ $videos->links() }}
-        </div>
-
+        @foreach ($videos as $video)
+            <div class="media flex">
+                {{ $video->title }}<br>
+                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        @endforeach
     </main>
+    <div class="pagination flex">
+        {{ $videos->links() }}
+    </div>
     <footer class="footer" id="footer"></footer>
 </div>
 

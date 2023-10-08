@@ -7,7 +7,7 @@
     @vite('resources/css/default.css')
     @vite('resources/css/header.css')
     @vite('resources/css/footer.css')
-    @vite('resources/css/main.css')
+    @vite('resources/css/memo.css')
     @vite('resources/css/register.css')
 </head>
 <body>

@@ -13,10 +13,11 @@ export default defineConfig({
             input: [
                 'resources/css/register.css',
                 'resources/css/default.css',
-                'resources/css/main.css',
+                'resources/css/memo.css',
                 'resources/css/footer.css',
                 'resources/css/header.css',
                 'resources/css/listen.css',
+                'resources/css/pagination.css',
                 'resources/js/app.js',
 
             ],

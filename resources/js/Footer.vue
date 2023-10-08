@@ -12,9 +12,6 @@
                     <section class="company__cs">
                         <span>이용약관</span>
                         <span>개인정보처리방침</span>
-                        <span>위치기반서비스 이용약관</span>
-                        <span>이용자보호 비전과 계획</span>
-                        <span>청소년보호정책</span>
                     </section>
                 </div>
 

@@ -16,10 +16,10 @@ const menuIcon = document.getElementById('menu-icon');
 const menuContent = document.getElementById('menu-content');
 
 menuIcon.addEventListener('click', () => {
-    if (menuContent.style.display === 'block') {
+    if (menuContent.style.display === 'flex') {
         menuContent.style.display = 'none';
     } else {
-        menuContent.style.display = 'block';
+        menuContent.style.display = 'flex';
     }
 });
 

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -19,4 +20,7 @@ a {
     text-decoration-line: none;
 }
 
+.container {
+    min-height: calc(100vh - 10vh);
+}
 

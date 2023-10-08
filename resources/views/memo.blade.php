@@ -7,7 +7,8 @@
     @vite('resources/css/default.css')
     @vite('resources/css/header.css')
     @vite('resources/css/footer.css')
-    @vite('resources/css/main.css')
+    @vite('resources/css/memo.css')
+    @vite('resources/css/pagination.css')
 </head>
 <body>
 <div class="container">
@@ -16,12 +17,12 @@
         <div class="main__search flex">
             <span class="search">
                 <form action="/sendSearch" method="get">
-                <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
-                    <option value="">선택</option>
-                    <option value="인사말">인사말</option>
-                    <option value="식사">식사</option>
-                </select>
-            </form>
+                    <select onchange="this.form.submit();" id="select__kind" name="selectedOption">
+                        <option value="">선택</option>
+                        <option value="인사말">인사말</option>
+                        <option value="식사">식사</option>
+                    </select>
+                </form>
             </span>
             <span><a href="/register">메모 등록</a></span>
         </div>
@@ -40,8 +41,9 @@
                 @endforeach
             </ul>
         @endif
-        {{ $memo1->links() }}
-
+        <div class="pagination flex">
+            {{ $memo1->links() }}
+        </div>
     </main>
     <footer class="footer" id="footer"></footer>
 </div>

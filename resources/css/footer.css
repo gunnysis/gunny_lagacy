@@ -1,6 +1,12 @@
 #footer {
-    height: 25vh;
     color: #0000008c;
+}
+
+.footer__container {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
 }
 
 .footer__container {
@@ -11,16 +17,14 @@
 
 .div__company__infos {
     flex-direction: column;
-    margin: 1rem;
+    align-items: center;
+    margin: 0.5rem;
 }
 
 .footer__company__info {
     display: block;
 }
 
-.company__intro {
-    padding: 1.5rem 1rem 0 1rem;
-}
 
 .company__intro div {
     padding-bottom: 0.5rem;
@@ -29,7 +33,6 @@
 
 .company__cs {
     display: inline-block;
-    padding: 0 1rem;
     font-size: 0.8rem;
 }
 
@@ -42,7 +45,7 @@
 }
 
 .div__footer {
-    padding-bottom: 3rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -54,7 +57,7 @@
     }
 
     .div__company__infos {
-        margin: 2rem;
+        margin: 1rem;
     }
 
 }
