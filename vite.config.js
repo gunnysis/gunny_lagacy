@@ -20,7 +20,6 @@ export default defineConfig({
                 'resources/css/pagination.css',
                 'resources/css/main.css',
                 'resources/js/app.js',
-
             ],
             refresh: true,
         }),
