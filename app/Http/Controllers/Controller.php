@@ -34,11 +34,11 @@ class Controller extends BaseController
     {
         $agent = new Agent();
         if ($agent->isTablet()) {
-            $count = 6;
+            $count = 4;
         } elseif ($agent->isMobile()) {
-            $count = 3;
+            $count = 2;
         } else {
-            $count = 10;
+            $count = 6;
         }
         $videos = Video::paginate($count);
         return view('listen',[
