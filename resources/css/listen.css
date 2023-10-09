@@ -19,10 +19,6 @@
     font-size: 0.7rem;
 }
 
-.pagination {
-    flex-basis: 100% !important;
-    margin: 10px auto !important;
-}
 
 
 .pagination li {
