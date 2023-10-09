@@ -21,7 +21,7 @@
                 <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
             </div>
         @endforeach
-        <div class="pagination">
+        <div class="pagination flex">
             {{ $videos->links() }}
         </div>
     </main>
