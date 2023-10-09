@@ -14,13 +14,15 @@
 <div class="container">
     <header class="header flex" id="header"></header>
     <main class="listen flex">
-        @foreach ($videos as $video)
-            <div class="media flex">
-                <span class="media__kind">{{ $video->kind }}</span>
-                {{ $video->id }}. {{ $video->title }}<br>
-                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
-            </div>
-        @endforeach
+        @if (count($videos) > 0)
+            @foreach ($videos as $video)
+                <div class="media flex">
+                    <span class="media__kind">{{ $video->kind }}</span>
+                    {{ $video->id }}. {{ $video->title }}<br>
+                    <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
+                </div>
+            @endforeach
+        @endif
         <div class="pagination flex">
             {{ $videos->links() }}
         </div>
