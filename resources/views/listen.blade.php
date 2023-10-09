@@ -16,8 +16,9 @@
     <main class="listen flex">
         @foreach ($videos as $video)
             <div class="media flex">
-                {{ $video->title }}<br>
-                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
+                <span class="media__kind">{{ $video->kind }}</span>
+                {{ $video->id }}. {{ $video->title }}<br>
+                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="200"></iframe>
             </div>
         @endforeach
         <div class="pagination">

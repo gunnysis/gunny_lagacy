@@ -12,7 +12,9 @@
     flex-direction: column;
 }
 
-
+.media__kind {
+    font-size: 0.7rem;
+}
 
 
 
