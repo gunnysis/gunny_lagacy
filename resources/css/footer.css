@@ -1,12 +1,14 @@
 #footer {
+    position : absolute;
+    bottom: 0;
+    height: 15vh;
     color: #0000008c;
 }
 
 .footer__container {
-    position: relative;
     display: block;
     width: 100vw;
-    height: 100vh;
+    padding: 0.5rem 0.5rem;
 }
 
 .footer__container {
@@ -45,7 +47,7 @@
 }
 
 .div__footer {
-    padding-bottom: 0.5rem;
+
 }
 
 
@@ -62,13 +64,6 @@
 
 }
 
-@media screen and (min-width: 962px) {
-
-    #footer {
-        height: 30vh;
-    }
-
-}
 
 
 
