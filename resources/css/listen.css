@@ -19,7 +19,10 @@
     font-size: 0.7rem;
 }
 
-
+.pagination {
+    flex-basis: 100% !important;
+    margin: 10px auto !important;
+}
 
 
 .pagination li {
@@ -43,10 +46,7 @@
         flex: 1;
     }
 
-    .pagination {
-        flex-basis: 100% !important;
-        margin: 10px auto !important;
-    }
+
 }
 
 
