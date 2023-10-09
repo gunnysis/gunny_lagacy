@@ -22,7 +22,7 @@
             </div>
         @endforeach
         <div class="pagination">
-            {!! $videos->links() !!}
+            {{ $videos->links() }}
         </div>
     </main>
     <footer class="footer" id="footer"></footer>
