@@ -26,20 +26,6 @@
     margin-right: 5px;
 }
 
-
-@media (min-width: 768px) {
-
-
-
-
-    .pagination {
-        flex-basis: 100%;
-        margin: 10px auto !important;
-    }
-
-
-}
-
 @media (min-width: 768px) {
     .listen {
         position: relative;
@@ -55,6 +41,11 @@
     .media {
         align-items: flex-start;
         flex: 1;
+    }
+
+    .pagination {
+        flex-basis: 100% !important;
+        margin: 10px auto !important;
     }
 }
 
