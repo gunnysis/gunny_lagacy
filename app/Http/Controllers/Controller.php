@@ -6,7 +6,7 @@ use App\Models\Memo;
 use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use function Termwind\render;
+use Jenssegers\Agent\Agent;
 
 class Controller extends BaseController
 {
@@ -18,7 +18,9 @@ class Controller extends BaseController
     }
     public function memo()
     {
+
         $memo1 = Memo::paginate(6);
+
         return view('memo',[
             'memo1' => $memo1]);
     }
@@ -30,7 +32,14 @@ class Controller extends BaseController
 
     public function listen()
     {
-        $videos = Video::paginate(3);
+        $agent = new Agent();
+
+        if ($agent->isMobile()) {
+            $videos = Video::paginate(3);
+        } else {
+            $videos = Video::paginate(6);
+
+        }
         return view('listen',[
             'videos' => $videos]);
     }

@@ -1,9 +1,9 @@
 
 .listen {
-    padding-top: 4rem;
-    height: 75vh;
-    justify-content: center;
+    max-height: 70vh;
     flex-direction: column;
+    position: relative;
+    top: 10vh;
 }
 
 .media {
@@ -26,9 +26,23 @@
 
 
     .listen {
+        position: relative;
+        top: 18vh;
         flex-direction: row;
         column-gap: 1.5rem;
         margin: 0 50px;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+
+    .media {
+        flex: 1;
+    }
+
+    .pagination {
+        flex-basis: 100%;
+        margin: 10px auto !important;
     }
 
 

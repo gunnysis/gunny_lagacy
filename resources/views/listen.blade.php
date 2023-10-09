@@ -17,14 +17,13 @@
         @foreach ($videos as $video)
             <div class="media flex">
                 {{ $video->title }}<br>
-                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen>
-                </iframe>
+                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
             </div>
         @endforeach
+        <div class="pagination">
+            {!! $videos->links() !!}
+        </div>
     </main>
-    <div class="pagination flex">
-        {{ $videos->links() }}
-    </div>
     <footer class="footer" id="footer"></footer>
 </div>
 
