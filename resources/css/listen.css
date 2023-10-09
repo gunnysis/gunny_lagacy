@@ -30,6 +30,17 @@
 @media (min-width: 768px) {
 
 
+
+
+    .pagination {
+        flex-basis: 100%;
+        margin: 10px auto !important;
+    }
+
+
+}
+
+@media (min-width: 768px) {
     .listen {
         position: relative;
         top: 7rem;
@@ -45,13 +56,6 @@
         align-items: flex-start;
         flex: 1;
     }
-
-    .pagination {
-        flex-basis: 100%;
-        margin: 10px auto !important;
-    }
-
-
 }
 
 
