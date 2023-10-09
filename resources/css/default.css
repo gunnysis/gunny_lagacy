@@ -11,15 +11,12 @@ body {
     display: flex;
 }
 
-tbody {
-    vertical-align: top;
-}
 
 a {
     text-decoration-line: none;
 }
 
 .container {
-    min-height: calc(100vh - 10vh);
+    min-height: 100vh;
 }
 

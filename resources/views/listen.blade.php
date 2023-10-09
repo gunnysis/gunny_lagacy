@@ -18,7 +18,7 @@
             <div class="media flex">
                 <span class="media__kind">{{ $video->kind }}</span>
                 {{ $video->id }}. {{ $video->title }}<br>
-                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="200"></iframe>
+                <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
             </div>
         @endforeach
         <div class="pagination">

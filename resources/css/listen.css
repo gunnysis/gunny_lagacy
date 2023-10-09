@@ -1,9 +1,12 @@
 
 .listen {
-    max-height: 70vh;
+    height: 70vh;
     flex-direction: column;
-    position: relative;
-    top: 10vh;
+    overflow: scroll;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 8.5vh;
 }
 
 .media {
@@ -29,7 +32,7 @@
 
     .listen {
         position: relative;
-        top: 18vh;
+        top: 7rem;
         flex-direction: row;
         column-gap: 1.5rem;
         margin: 0 50px;
