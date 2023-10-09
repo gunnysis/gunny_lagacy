@@ -20,12 +20,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
-    .pagination {
-        flex-basis: 100%;
-    }
 
-}
 
 
 
