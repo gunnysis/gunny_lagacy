@@ -33,10 +33,11 @@ class Controller extends BaseController
     public function listen()
     {
         $agent = new Agent();
+        $count = 0;
         if ($agent->isMobile()) {
             $count = 3;
         } else {
-            $count = 6;
+            $count = 8;
         }
         $videos = Video::paginate($count);
         return view('listen',[
