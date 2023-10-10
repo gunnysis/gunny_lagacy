@@ -36,7 +36,7 @@ class Controller extends BaseController
         if ($agent->isTablet()) {
             $count = 6;
         } elseif ($agent->isMobile()) {
-            $count = 3;
+            $count = 2;
         } else {
             $count = 10;
         }
