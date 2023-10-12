@@ -1,13 +1,15 @@
 
 .listen {
-    height: 80vh;
     flex-direction: column;
+    height: 100vh;
+    padding: 1rem 0;
 }
 
 .media {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0.5rem 0;
 }
 
 .media__kind {
