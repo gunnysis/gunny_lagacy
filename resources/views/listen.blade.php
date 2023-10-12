@@ -11,23 +11,23 @@
     @vite('resources/css/pagination.css')
 </head>
 <body>
-<div class="container">
     <header class="header flex" id="header"></header>
-    <main class="listen flex">
-        @if (count($videos) > 0)
-            @foreach ($videos as $video)
-                <div class="media flex">
-                    <span class="media__kind">{{ $video->kind }}</span>
-                    {{ $video->id }}. {{ $video->title }}<br>
-                    <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
-                </div>
-            @endforeach
-        @endif
-        <div class="pagination flex">
-            {{ $videos->links() }}
-        </div>
-    </main>
-    <footer class="footer" id="footer"></footer>
+    <div class="container">
+        <main class="listen flex">
+            @if (count($videos) > 0)
+                @foreach ($videos as $video)
+                    <div class="media flex">
+                        <span class="media__kind">{{ $video->kind }}</span>
+                        {{ $video->id }}. {{ $video->title }}<br>
+                        <iframe src={{ $video->url . "&output=embed" }} frameborder="0" allowfullscreen width="300" height="150"></iframe>
+                    </div>
+                @endforeach
+            @endif
+            <div class="pagination flex">
+                {{ $videos->links() }}
+            </div>
+        </main>
+        <footer class="footer" id="footer"></footer>
 </div>
 
 @vite('resources/js/app.js')
